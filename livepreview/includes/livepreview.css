@@ -1,0 +1,46 @@
+#bbshowfull, #bbquicksave {
+	z-index:9999;
+	position:fixed;
+	top:100px;
+	left:0px;
+    background-color: #fff;
+    border: solid 1px #f1f1f1;
+    color: #666;
+    padding: 15px 15px 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: -10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+}
+#bbshowfull:hover, #bbquicksave:hover {
+	background-color: #f1f1f1;
+	border-right: solid 1px #d1d1d1;
+	border-bottom: solid 1px #d1d1d1;
+	left:10px;
+}
+
+#bbquicksave {
+	top:156px;
+}
+
+#bbshowfull a:after, #bbquicksave a:after {
+	content: '\f177';
+	color: #999;
+	display: inline-block;
+	font: normal 20px / 1 'dashicons';
+	margin-left: 5px;
+	vertical-align: middle;
+	-webkit-font-smoothing: antialiased;
+}
+
+#bbshowfull a.full:after {
+	content: '\f530';
+}
+
+#bbquicksave a:after {
+	content: '\f316';
+}
