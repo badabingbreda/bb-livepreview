@@ -1,5 +1,5 @@
 #bbshowfull, #bbquicksave {
-	z-index:9999;
+	z-index:999999;
 	position:fixed;
 	top:100px;
 	left:0px;
