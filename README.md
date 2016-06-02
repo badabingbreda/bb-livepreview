@@ -15,6 +15,8 @@ Two buttons will show at the left of the screen whenever you are in the Beaver B
 
 **Version:**
 
+1.1.5	Added updater
+
 1.1.4	removed a typo in the css
 
 1.1.2	Made none-theme specific (left that one in)
