@@ -7,3 +7,9 @@ Unzip the archive and put the bb-livepreview folder into your plugins folder (/w
 Activate the plugin from the Plugins menu.
 
 Two buttons will show at the left of the screen whenever you are in the Beaver Builder Editor. Top is preview-toggle, lower is Quicksave.
+
+
+Version:
+1.1.4	removed a typo in the css
+1.1.2	Made none-theme specific (left that one in)
+1.1.0	Initial version

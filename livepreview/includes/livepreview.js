@@ -39,8 +39,8 @@
 			$('<div id="bbquicksave"><a href="javascript:void(0);" title="Quicksave"></a></div>').prependTo('body');
 			$('<div class="fl-builder-panel-info fl-builder-blocks-section"><div class="fl-builder-blocks-section-title"><input type="checkbox" value="1" name="butbbquicksave" id="butbbquicksave" '+((Cookies.get('bbshowquicksave')=='true')?'checked':'')+'><label for="butbbquicksave">Show Quicksave button</label></div></div>').appendTo('div.fl-builder-panel-content');
 
-			$('.fl-page').delegate('#bblivepreview', 'click', toggle_livepreview );
-			$('.fl-page').delegate('#bbquicksave' , 'click' , FLBuilder._publishButtonClicked );
+			$('body').delegate('#bblivepreview', 'click', toggle_livepreview );
+			$('body').delegate('#bbquicksave' , 'click' , FLBuilder._publishButtonClicked );
 			$('body').delegate('#butbblivepreview' , 'click' , toggle_showlivepreview );
 			$('body').delegate('#butbbquicksave' , 'click' , toggle_showquicksave );
 
