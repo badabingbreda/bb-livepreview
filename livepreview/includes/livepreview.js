@@ -31,6 +31,24 @@
 			if (ischecked) { $( '#bbquicksave' ).removeClass('hidden'); } else { $( '#bbquicksave' ).addClass('hidden'); }
 		}
 
+		_savedone = function () {
+			$('#bbquicksave').addClass('saved');
+
+			setTimeout( _savereset , 2000 );
+		}
+
+		_savereset = function () {
+			$('#bbquicksave').removeClass('saved');
+		}
+
+		_Quicksave = function () {
+			FLBuilder.showAjaxLoader();
+			FLBuilder.ajax({
+				action: 'save_layout'
+			}, _savedone );
+
+		}
+
 		if ( typeof FLBuilderModel != undefined ) {
 			var isfullview = false;
 			$('<div id="bblivepreview"><a href="javascript:void(0);" title="Hide Editor"></a></div>').prependTo('body');
@@ -40,7 +58,7 @@
 			$('<div class="fl-builder-panel-info fl-builder-blocks-section"><div class="fl-builder-blocks-section-title"><input type="checkbox" value="1" name="butbbquicksave" id="butbbquicksave" '+((Cookies.get('bbshowquicksave')=='true')?'checked':'')+'><label for="butbbquicksave">Show Quicksave button</label></div></div>').appendTo('div.fl-builder-panel-content');
 
 			$('body').delegate('#bblivepreview', 'click', toggle_livepreview );
-			$('body').delegate('#bbquicksave' , 'click' , FLBuilder._publishButtonClicked );
+			$('body').delegate('#bbquicksave' , 'click' , _Quicksave );
 			$('body').delegate('#butbblivepreview' , 'click' , toggle_showlivepreview );
 			$('body').delegate('#butbbquicksave' , 'click' , toggle_showquicksave );
 

@@ -32,6 +32,11 @@
 	top:156px;
 }
 
+#bbquicksave.saved {
+	background-color:#090;
+	border-color:#090;
+}
+
 #bblivepreview a:after, #bbquicksave a:after {
 	content: '\f177';
 	color: #999;
@@ -48,4 +53,8 @@
 
 #bbquicksave a:after {
 	content: '\f316';
+}
+
+#bbquicksave.saved a:after {
+	color:#fff;
 }
