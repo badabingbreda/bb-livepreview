@@ -14,7 +14,6 @@ define( 'BBLIVEPREVIEW_URL', plugins_url( '/', __FILE__ ) );
 
 add_action( 'init', 'BBLIVEPREVIEW_plugin_start' );
 
-
 function BBLIVEPREVIEW_plugin_start() {
 
   if ( class_exists( 'FLBuilder' ) ) {
@@ -24,5 +23,18 @@ function BBLIVEPREVIEW_plugin_start() {
   }
 
 }
+
+/**
+ * UPDATER
+ */
+
+if( ! class_exists( 'Smashing_Updater' ) ){
+	include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
+}
+$updater = new Smashing_Updater( __FILE__ );
+$updater->set_username( 'badabingbreda' );
+$updater->set_repository( 'bb-livepreview' );
+
+$updater->initialize();
 
 
