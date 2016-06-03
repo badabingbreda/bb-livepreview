@@ -112,36 +112,43 @@
 			// init state for fullview
 			var isfullview = false;
 			// add the fixed layout buttons to the body
-			$('<div id="bblivepreview"><a href="javascript:void(0);" title="Hide Editor"></a></div>').prependTo('body');
-			$('<div id="bbquicksave"><a href="javascript:void(0);" title="Quicksave"></a></div>').prependTo('body');
+			$('<div id="bblivepreview"><a href="javascript:void(0);" title="' + bblp_lang.hide_editor + '"></a></div>').prependTo('body');
+			$('<div id="bbquicksave"><a href="javascript:void(0);" title="' + bblp_lang.quicksave + '"></a></div>').prependTo('body');
 
 			// extend the panel
 			$.bbAddPanel({
 				location: 'panel',
 				html: '<input type="checkbox" value="1" name="butbblivepreview" id="butbblivepreview" '+
 						( ( Cookies.get('bbshowlivepreview')=='true')?'checked':'' ) +
-						'><label for="butbblivepreview">Show Live Preview</label>',
+						'><label for="butbblivepreview">' + bblp_lang.show_livepreview + '</label>',
 				style: 'section'
 			});
 			$.bbAddPanel({
 				location: 'panel',
 				html: '<input type="checkbox" value="1" name="butbbquicksave" id="butbbquicksave" '+
 					((Cookies.get('bbshowquicksave')=='true')?'checked':'')+
-					'><label for="butbbquicksave">Show Quicksave button</label>',
+					'><label for="butbbquicksave">' + bblp_lang.show_quicksave + '</label>',
 				style: 'section'
 			});
 			$.bbAddPanel({
 				location: 'bar',
-				html: 'Quicksave',
+				html: bblp_lang.quicksave,
 				style: 'button',
 				class:'fl-builder-quicksave-button'
 			});
 
+			$.bbAddPanel({
+				location: 'bar',
+				html: bblp_lang.layout_settings ,
+				style: 'button',
+				class: 'custom-layout-settings'
+			});
 			// Add the delegates
 			$('body').delegate('#bblivepreview', 'click', toggle_livepreview );
 			$('body').delegate('#bbquicksave, .fl-builder-quicksave-button' , 'click' , _Quicksave );
 			$('body').delegate('#butbblivepreview' , 'click' , toggle_showlivepreview );
 			$('body').delegate('#butbbquicksave' , 'click' , toggle_showquicksave );
+			$('body').delegate('.custom-layout-settings', 'click', FLBuilder._layoutSettingsClicked );
 
 			// run toggles to determine the current state of the cookies and show/hide if needed
 			toggle_showlivepreview();

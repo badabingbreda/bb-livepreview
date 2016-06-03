@@ -15,6 +15,8 @@ Two buttons will show at the left of the screen whenever you are in the Beaver B
 
 **Version:**
 
+1.1.8	Added Layout Settings button. Added translation
+
 1.1.7	Added to Quicksave to topbar, brushed up on jquery, added more comments
 
 1.1.6	Changed Quicksave behavior, save without leaving the builder. Change button-color to indicate save is complete.
