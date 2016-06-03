@@ -45,23 +45,27 @@
 	border-color:#090;
 }
 
+#bblivepreview, #bbquicksave {
+	width:64px;
+	overflow:hidden;
+}
 #bblivepreview a:after,
 #bbquicksave a:after {
-	content: '\f177';
+	content: '\f06e';
 	color: #999;
 	display: inline-block;
-	font: normal 20px / 1 'dashicons';
+	font: normal 18px / 1 'FontAwesome';
 	margin-left: 5px;
 	vertical-align: middle;
 	-webkit-font-smoothing: antialiased;
 }
 
 #bblivepreview a.preview:after {
-	content: '\f530';
+	content: '\f070';
 }
 
 #bbquicksave a:after {
-	content: '\f316';
+	content: '\f0c7';
 }
 
 #bbquicksave.saved a:after,
