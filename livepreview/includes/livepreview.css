@@ -1,4 +1,5 @@
-#bblivepreview, #bbquicksave {
+#bblivepreview,
+#bbquicksave {
 	z-index:999999;
 	position:fixed;
 	top:100px;
@@ -17,11 +18,14 @@
 
 }
 
-#bblivepreview.hidden, #bbquicksave.hidden {
+#bblivepreview.hidden,
+#bbquicksave.hidden,
+.fl-builder-quicksave-button.hidden {
 	display:none;
 }
 
-#bblivepreview:hover, #bbquicksave:hover {
+#bblivepreview:hover,
+#bbquicksave:hover {
 	background-color: #f1f1f1;
 	border-right: solid 1px #d1d1d1;
 	border-bottom: solid 1px #d1d1d1;
@@ -32,12 +36,17 @@
 	top:156px;
 }
 
-#bbquicksave.saved {
+.fl-builder-quicksave-button {
+	transition: all 0.2s ease;
+}
+#bbquicksave.saved,
+.fl-builder-quicksave-button.saved {
 	background-color:#090;
 	border-color:#090;
 }
 
-#bblivepreview a:after, #bbquicksave a:after {
+#bblivepreview a:after,
+#bbquicksave a:after {
 	content: '\f177';
 	color: #999;
 	display: inline-block;
@@ -55,6 +64,12 @@
 	content: '\f316';
 }
 
-#bbquicksave.saved a:after {
+#bbquicksave.saved a:after,
+.fl-builder-quicksave-button.saved {
 	color:#fff;
+}
+
+.fl-builder-blocks-section-title.custom-section label {
+	margin-left:10px;
+	font-weight: bold;
 }
