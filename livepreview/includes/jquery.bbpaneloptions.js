@@ -11,6 +11,7 @@
 		        var settings = $.extend({
 		            html: null,					// the html to insert or button text
 		            location: 'panel',			// panel (to the left) | bar (top)
+		            sectionname: null,
 		            position: 'after',			// determine where to add the html or button
 		            target: null,				//
 		            style: 'section',
@@ -25,6 +26,7 @@
 
 		        	// if target not set in options base it on location
 		        	if ( !settings.target ) settings.target = 'div.fl-builder-panel-content';
+		        	if ( settings.sectionname ) settings.target = settings.target.concat(' #fl-builder-blocks-' + settings.sectionname + ' .fl-builder-blocks-section-content');
 
 		        } else if ( settings.location == 'bar' ) {
 
@@ -51,6 +53,30 @@
 		        }
 		        return this;
 
+			},
+
+			bbAddSection : function ( options ) {
+				// DEFAULT SETTINGS
+				var settings = $.extend({
+					sectionname : 'dummy',			// Name for display in the BackEnd
+					sectionid: 'dummy',				// id for targetting
+					order: 'last'					// order, either numeric or 'last'/'first';
+					}, options	);
+
+				var html = '<div id="fl-builder-blocks-' + settings.sectionid + '" class="fl-builder-blocks-section"><span class="fl-builder-blocks-section-title">' + settings.sectionname + '<i class="fa fa-chevron-down"></i></span><div class="fl-builder-blocks-section-content fl-builder-modules ui-sortable"></div></div>';
+
+				if ( $.isNumeric( settings.order ) ) {
+					$( html ).insertAfter ( '.fl-builder-blocks div:nth-of-type(' + settings.order.toString() + ')' );
+				} else {
+					if ( $.type( settings.order ) == 'string' ) {
+						if ( settings.order == 'last' ) {
+							$( html ).insertAfter ( '.fl-builder-blocks' );
+						} else if( settings.order == 'first' ) {
+							$( html ).insertBefore ( '.fl-builder-blocks' );
+						}
+
+					}
+				}
 			}
 		});
 } ( jQuery ));

@@ -1,13 +1,15 @@
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: Beaver Builder Live Preview and Quicksave\n"
-"POT-Creation-Date: 2016-06-03 14:19+0200\n"
-"PO-Revision-Date: 2016-06-03 14:24+0200\n"
+"POT-Creation-Date: 2016-07-01 14:59+0200\n"
+"PO-Revision-Date: 2016-07-01 15:02+0200\n"
+"Last-Translator: Didou Schol <didou@badabing.nl>\n"
 "Language-Team: Didou Schol <didou@badabing.nl>\n"
+"Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.8.7\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: bb-livepreview.php\n"
@@ -15,28 +17,34 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Last-Translator: Didou Schol <didou@badabing.nl>\n"
-"Language: nl_NL\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: livepreview/livepreview.php:15
+#: livepreview/livepreview.php:33
 msgid "Show/Hide Editor"
 msgstr "Toon/Verberg Editor"
 
-#: livepreview/livepreview.php:16
+#: livepreview/livepreview.php:34
 msgid "Quicksave"
 msgstr "Quicksave"
 
-#: livepreview/livepreview.php:17
+#: livepreview/livepreview.php:35
+msgid "Live Preview"
+msgstr ""
+
+#: livepreview/livepreview.php:36
 msgid "Show Live Preview"
 msgstr "Toon Live Preview"
 
-#: livepreview/livepreview.php:18
+#: livepreview/livepreview.php:37
 msgid "Show Quicksave button"
 msgstr "Toon Quicksave button"
 
-#: livepreview/livepreview.php:19
+#: livepreview/livepreview.php:38
+msgid "Show Quick Layout button"
+msgstr "Toon Snelle Layout button"
+
+#: livepreview/livepreview.php:39
 msgid "Layout Settings"
 msgstr ""
 
@@ -52,14 +60,26 @@ msgstr ""
 #. Description of the plugin/theme
 msgid ""
 "By the press of a button view your layout as if you were on the frontend, "
-"not on the backend. Also adds a quicksave button, which publishes the layout "
-"with just one click."
+"not on the backend. Add a Quicksave button that allows you to stay on the "
+"same page and Provide easy access to CSS/Layout Settings by moving it to the "
+"top bar."
 msgstr ""
-"Met één druk op de knop zie je je layout alsof je het live bekijkt.  Voegt "
-"een quicksave button toe zodat je tussendoor ook kunt opslaan zonder weer "
-"naar de layoutmode te hoeven gaan. Ook krijg je snelle toegang tot de CSS "
-"aanpassingen, doordat deze knop op de bar wordt geplaatst."
+"Met een druk op de knop bekijk je je ontwerp alsof je als bezoeker je site "
+"bekijkt en niet aan de achterkant. Voeg een Quicksave button toe waarmee je "
+"op dezelfde pagina blijft bij het opslaan en krijg snelle toegang tot de CSS "
+"Layout Settings vanaf de bovenste balk ind e editor."
 
 #. Author of the plugin/theme
 msgid "Badabing"
 msgstr ""
+
+#~ msgid ""
+#~ "By the press of a button view your layout as if you were on the frontend, "
+#~ "not on the backend. Also adds a quicksave button, which publishes the "
+#~ "layout with just one click."
+#~ msgstr ""
+#~ "Met één druk op de knop zie je je layout alsof je het live bekijkt.  "
+#~ "Voegt een quicksave button toe zodat je tussendoor ook kunt opslaan "
+#~ "zonder weer naar de layoutmode te hoeven gaan. Ook krijg je snelle "
+#~ "toegang tot de CSS aanpassingen, doordat deze knop op de bar wordt "
+#~ "geplaatst."

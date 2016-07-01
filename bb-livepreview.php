@@ -2,14 +2,14 @@
 /**
  * Plugin Name: Beaver Builder Live Preview and Quicksave
  * Plugin URI: http://www.badabing.nl
- * Description: By the press of a button view your layout as if you were on the frontend, not on the backend. Also adds a quicksave button, which publishes the layout with just one click.
- * Version: 1.1.8
+ * Description: By the press of a button view your layout as if you were on the frontend, not on the backend. Add a Quicksave button that allows you to stay on the same page and Provide easy access to CSS/Layout Settings by moving it to the top bar.
+ * Version: 1.2.0
  * Author: Badabing
  * Author URI: http://www.badabing.nl
  * Text Domain: bb-livepreview
  * Domain Path: /languages
   */
-define( 'BBLIVEPREVIEW_VERSION' , '1.1.8' );
+define( 'BBLIVEPREVIEW_VERSION' , '1.2.0' );
 define( 'BBLIVEPREVIEW_DIR', plugin_dir_path( __FILE__ ) );
 define( 'BBLIVEPREVIEW_URL', plugins_url( '/', __FILE__ ) );
 

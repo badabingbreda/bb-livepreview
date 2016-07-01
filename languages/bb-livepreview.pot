@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Beaver Builder Live Preview and Quicksave\n"
-"POT-Creation-Date: 2016-06-03 14:18+0200\n"
+"POT-Creation-Date: 2016-07-01 14:59+0200\n"
 "PO-Revision-Date: 2016-06-03 14:18+0200\n"
 "Last-Translator: Didou Schol <didou@badabing.nl>\n"
 "Language-Team: Didou Schol <didou@badabing.nl>\n"
@@ -20,23 +20,31 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: livepreview/livepreview.php:15
+#: livepreview/livepreview.php:33
 msgid "Show/Hide Editor"
 msgstr ""
 
-#: livepreview/livepreview.php:16
+#: livepreview/livepreview.php:34
 msgid "Quicksave"
 msgstr ""
 
-#: livepreview/livepreview.php:17
+#: livepreview/livepreview.php:35
+msgid "Live Preview"
+msgstr ""
+
+#: livepreview/livepreview.php:36
 msgid "Show Live Preview"
 msgstr ""
 
-#: livepreview/livepreview.php:18
+#: livepreview/livepreview.php:37
 msgid "Show Quicksave button"
 msgstr ""
 
-#: livepreview/livepreview.php:19
+#: livepreview/livepreview.php:38
+msgid "Show Quick Layout button"
+msgstr ""
+
+#: livepreview/livepreview.php:39
 msgid "Layout Settings"
 msgstr ""
 
@@ -52,8 +60,9 @@ msgstr ""
 #. Description of the plugin/theme
 msgid ""
 "By the press of a button view your layout as if you were on the frontend, "
-"not on the backend. Also adds a quicksave button, which publishes the layout "
-"with just one click."
+"not on the backend. Add a Quicksave button that allows you to stay on the "
+"same page and Provide easy access to CSS/Layout Settings by moving it to the "
+"top bar."
 msgstr ""
 
 #. Author of the plugin/theme
