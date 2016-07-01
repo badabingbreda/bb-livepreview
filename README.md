@@ -14,6 +14,9 @@ You're able to have two buttons at the left of the screen whenever you are in th
 
 
 **Version:**
+
+1.2.2	Had to bump version for github to notice
+
 1.2.1	Added versioning in js and css to prevent cached files on updates
 
 1.2.0	Moved the checkboxes into their own section to prevent clutter of things, added toggle for Layout Settings, seperate Quicksave on top bar
