@@ -3,7 +3,7 @@
  * livepreview.php
  *
  * @package Beaver Builder Live Preview and Quicksave
- * @since 1.2.0
+ * @since 1.2.1
  * @author badabingbreda
  * @link http://www.badabing.nl
  * @license GNU General Public License 2.0+
@@ -17,13 +17,13 @@ function load_on_builder () {
 	// only when in builder editor mode
     if ( isset( $_GET['fl_builder'] ) ) {
     	// add the cookie script
-		wp_enqueue_script( 'jscookie', BBLIVEPREVIEW_URL.'livepreview/includes/js.cookie.js' , array ( 'jquery' ) , '' , false );
+		wp_enqueue_script( 'jscookie', BBLIVEPREVIEW_URL.'livepreview/includes/js.cookie.js' , array ( 'jquery' ) , BBLIVEPREVIEW_VERSION , false );
 
 		//add paneloptions plugin
-		wp_enqueue_script( 'bbpaneloptions', BBLIVEPREVIEW_URL.'livepreview/includes/jquery.bbpaneloptions.js' , array ( 'jquery' ) , '' , false );
+		wp_enqueue_script( 'bbpaneloptions', BBLIVEPREVIEW_URL.'livepreview/includes/jquery.bbpaneloptions.js' , array ( 'jquery' ) , BBLIVEPREVIEW_VERSION , false );
 
 		// add the actual plugin
-		wp_enqueue_script( 'bblivepreview', BBLIVEPREVIEW_URL.'livepreview/includes/livepreview.js' , array ( 'jquery' ) , '' , false );
+		wp_enqueue_script( 'bblivepreview', BBLIVEPREVIEW_URL.'livepreview/includes/livepreview.js' , array ( 'jquery' ) , BBLIVEPREVIEW_VERSION , false );
 
 		// css for this plugin
 		wp_enqueue_style( 'bblivepreview' , BBLIVEPREVIEW_URL.'livepreview/includes/livepreview.css', null, BBLIVEPREVIEW_VERSION , 'all' );
