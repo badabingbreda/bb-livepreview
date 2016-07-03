@@ -60,7 +60,7 @@
 				var settings = $.extend({
 					sectionname : 'dummy',			// Name for display in the BackEnd
 					sectionid: 'dummy',				// id for targetting
-					order: 'last'					// order, either numeric or 'last'/'first';
+					order: 'last'					// order, either numeric (1,2,3, etc) or 'last'/'first';
 					}, options	);
 
 				var html = '<div id="fl-builder-blocks-' + settings.sectionid + '" class="fl-builder-blocks-section"><span class="fl-builder-blocks-section-title">' + settings.sectionname + '<i class="fa fa-chevron-down"></i></span><div class="fl-builder-blocks-section-content fl-builder-modules ui-sortable"></div></div>';
@@ -74,9 +74,10 @@
 						} else if( settings.order == 'first' ) {
 							$( html ).insertBefore ( '.fl-builder-blocks' );
 						}
-
 					}
 				}
+
+				return this;
 			}
 		});
 } ( jQuery ));

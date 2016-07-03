@@ -101,7 +101,6 @@
 		toggle_showcustomlayout = function () {
 			// get the checkbox state
 			var ischecked = $('#butbbcustomlayout').prop('checked');
-
 			// set the cookie to it's new value
 			Cookies.set('bbcustomlayout', ischecked );
 			// determine if we need to show or hide the quicksave button(s)

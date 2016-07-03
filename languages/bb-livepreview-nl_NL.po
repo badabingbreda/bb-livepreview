@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Beaver Builder Live Preview and Quicksave\n"
-"POT-Creation-Date: 2016-07-01 14:59+0200\n"
-"PO-Revision-Date: 2016-07-01 15:02+0200\n"
+"POT-Creation-Date: 2016-07-03 20:29+0200\n"
+"PO-Revision-Date: 2016-07-03 20:30+0200\n"
 "Last-Translator: Didou Schol <didou@badabing.nl>\n"
 "Language-Team: Didou Schol <didou@badabing.nl>\n"
 "Language: nl_NL\n"
@@ -41,10 +41,14 @@ msgid "Show Quicksave button"
 msgstr "Toon Quicksave button"
 
 #: livepreview/livepreview.php:38
+msgid "Show Quicksave on Bar"
+msgstr "Toon Quicksave op bovenste balk"
+
+#: livepreview/livepreview.php:39
 msgid "Show Quick Layout button"
 msgstr "Toon Snelle Layout button"
 
-#: livepreview/livepreview.php:39
+#: livepreview/livepreview.php:40
 msgid "Layout Settings"
 msgstr ""
 
@@ -67,7 +71,7 @@ msgstr ""
 "Met een druk op de knop bekijk je je ontwerp alsof je als bezoeker je site "
 "bekijkt en niet aan de achterkant. Voeg een Quicksave button toe waarmee je "
 "op dezelfde pagina blijft bij het opslaan en krijg snelle toegang tot de CSS "
-"Layout Settings vanaf de bovenste balk ind e editor."
+"Layout Settings vanaf de bovenste balk in de editor."
 
 #. Author of the plugin/theme
 msgid "Badabing"

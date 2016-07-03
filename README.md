@@ -8,12 +8,14 @@ Also adds a quicksave button, which publishes the layout with just one click.
 * Activate the plugin from the Plugins menu.
 
 
-In the right beaverbuilder-toolbar three checkboxes will appear for easy access to live preview, quicksave and quick Layout Settings. You can toggle the preview-, quicksave- and Layout Settings-buttons to a default setting. Cookies are used to remember your settings.
+In the right beaverbuilder-toolbar there will be a section called "Live Preview". There are four checkboxes that will enable you to activate the live preview, quicksave and Quick Layout Settings-button. You can toggle the preview-, quicksave- and Layout Settings-buttons to a default setting. Cookies are used to remember your settings.
 
 You're able to have two buttons at the left of the screen whenever you are in the Beaver Builder Editor. Top is preview-toggle, lower is Quicksave.
 
 
 **Version:**
+
+1.2.3	fixed bug that didn't hide Layout Settings on top bar, updated language file. Updated installation procedure.
 
 1.2.2	Had to bump version for github to notice
 

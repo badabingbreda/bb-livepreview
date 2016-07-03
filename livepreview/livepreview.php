@@ -3,7 +3,6 @@
  * livepreview.php
  *
  * @package Beaver Builder Live Preview and Quicksave
- * @since 1.2.2
  * @author badabingbreda
  * @link http://www.badabing.nl
  * @license GNU General Public License 2.0+

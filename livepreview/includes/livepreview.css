@@ -20,7 +20,8 @@
 
 #bblivepreview.hidden,
 #bbquicksave.hidden,
-.fl-builder-quicksave-button.hidden {
+.fl-builder-quicksave-button.hidden,
+.custom-layout-settings.hidden {
 	display:none;
 }
 
@@ -36,7 +37,8 @@
 	top:156px;
 }
 
-.fl-builder-quicksave-button {
+.fl-builder-quicksave-button,
+.custom-layout-settings {
 	transition: all 0.2s ease;
 }
 #bbquicksave.saved,

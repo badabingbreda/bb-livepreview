@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Beaver Builder Live Preview and Quicksave\n"
-"POT-Creation-Date: 2016-07-01 14:59+0200\n"
+"POT-Creation-Date: 2016-07-03 20:29+0200\n"
 "PO-Revision-Date: 2016-06-03 14:18+0200\n"
 "Last-Translator: Didou Schol <didou@badabing.nl>\n"
 "Language-Team: Didou Schol <didou@badabing.nl>\n"
@@ -41,10 +41,14 @@ msgid "Show Quicksave button"
 msgstr ""
 
 #: livepreview/livepreview.php:38
-msgid "Show Quick Layout button"
+msgid "Show Quicksave on Bar"
 msgstr ""
 
 #: livepreview/livepreview.php:39
+msgid "Show Quick Layout button"
+msgstr ""
+
+#: livepreview/livepreview.php:40
 msgid "Layout Settings"
 msgstr ""
 
