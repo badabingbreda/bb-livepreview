@@ -15,6 +15,8 @@ You're able to have two buttons at the left of the screen whenever you are in th
 
 **Version:**
 
+1.2.4	removed redundant line of code which seemed to give warning in WP's plugin section (thanks Ivan!)
+
 1.2.3	fixed bug that didn't hide Layout Settings on top bar, updated language file. Updated installation procedure.
 
 1.2.2	Had to bump version for github to notice

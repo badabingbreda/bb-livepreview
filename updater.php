@@ -11,7 +11,6 @@ class Smashing_Updater {
 
 	public function __construct( $file ) {
 		$this->file = $file;
-		$this->type = $type;
 
 		add_action( 'admin_init', array( $this, 'set_plugin_properties' ) );
 
