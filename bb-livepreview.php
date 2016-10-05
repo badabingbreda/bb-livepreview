@@ -20,11 +20,17 @@ add_action( 'init', 'BBLIVEPREVIEW_plugin_start' );
 
 function BBLIVEPREVIEW_plugin_start() {
 
-  if ( class_exists( 'FLBuilder' ) ) {
+	global $post;
+
+	if ( ! is_user_logged_in() ) {
+		return;
+	}
+
+  	if ( class_exists( 'FLBuilder' ) &&  current_user_can( 'edit_post', $post->ID ) ) {
 
        require_once ( 'livepreview/livepreview.php' );
 
-  }
+  	}
 
 }
 
